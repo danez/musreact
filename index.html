@@ -7,7 +7,6 @@
   <script src="codemirror/lib/codemirror.js"></script>
   <script src="codemirror/mode/xml/xml.js"></script>
   <script src="codemirror/mode/javascript/javascript.js"></script>
-  <script src="js/react.js"></script>
   <script src="js/musreact.js"></script>
 <style>
 #code {
@@ -68,7 +67,7 @@ var tpl = CodeMirror.fromTextArea(document.querySelector("#template>textarea"), 
 });
 tpl.on("change", compile);
   
-var result = CodeMirror.fromTextArea(document.querySelector("textarea.result"), {
+var result = CodeMirror.fromTextArea(document.querySelector("textarea#result"), {
     lineNumbers: true,
     mode: "javascript",
     readOnly: true
